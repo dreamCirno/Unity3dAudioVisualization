@@ -2,7 +2,7 @@
 
 这是一个使用Unity3D引擎制作的音频可视化播放器。
 
-[![Audio Visualization](http://dreamcirno.com/wp-content/uploads/2018/01/YPWZWQ@V_FE01IQ7GYX.png "Audio Visualization")](http://dreamcirno.com/wp-content/uploads/2018/01/YPWZWQ@V_FE01IQ7GYX.png "Audio Visualization")
+[![Audio Visualization](https://s1.ax1x.com/2018/01/14/ptc5wT.png "Audio Visualization")](https://s1.ax1x.com/2018/01/14/ptc5wT.png "Audio Visualization")
 
 
 ## 更新摘要
