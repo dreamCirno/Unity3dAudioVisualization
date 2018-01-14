@@ -856,7 +856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _progressBar: {fileID: 1072471475}
-  fileManager: {fileID: 215325547}
+  _fileManager: {fileID: 215325547}
+  _cursorManager: {fileID: 1782463575}
 --- !u!1 &220663908 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1050095833296086, guid: 8d51046a7c229fc4fb3de5a925c35c93,

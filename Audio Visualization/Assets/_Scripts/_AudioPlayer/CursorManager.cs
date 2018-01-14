@@ -37,7 +37,7 @@ public class CursorManager : MonoBehaviour
     /// <summary>
     /// 隐藏鼠标
     /// </summary>
-    void HideCursor()
+    public void HideCursor()
     {
         _imageCircle.enabled = false;
         _trailCursor.enabled = false;
@@ -47,7 +47,7 @@ public class CursorManager : MonoBehaviour
     /// <summary>
     /// 显示图标
     /// </summary>
-    void ShowCursor()
+    public void ShowCursor()
     {
         _imageCircle.enabled = true;
         _trailCursor.enabled = true;

@@ -16,7 +16,8 @@ public class AudioManager : MonoBehaviour
     public static int currentNum = 0;
     public static ArrayList fileNameList = new ArrayList();
     public static Text _songInfo;
-    public FileManager fileManager;
+    public FileManager _fileManager;
+    public CursorManager _cursorManager;
 
     Coroutine _playAudio;
     public static bool _audioIsLoadDone = true;
@@ -49,7 +50,11 @@ public class AudioManager : MonoBehaviour
             //回车键 - 打开文件夹后，开始播放音乐列表
             if (Input.GetKeyUp(KeyCode.Return))
             {
-                fileNameList = fileManager.OpenFileBrowser();
+                //模拟用户动作，为了显示鼠标
+                GameManager._newMousePosition = new Vector2(9999, 9999);
+                _cursorManager.ShowCursor();
+
+                fileNameList = _fileManager.OpenFileBrowser();
                 PlaySong(PlayButton.CURRENT);
             }
             //左箭头键 - 上一首
@@ -172,7 +177,7 @@ public class AudioManager : MonoBehaviour
         {
             FileInfo fileInfo = (FileInfo)fileNameList[currentNum];
             //等待音乐加载完毕
-            yield return StartCoroutine(fileManager.LoadAudio(fileInfo));
+            yield return StartCoroutine(_fileManager.LoadAudio(fileInfo));
             //加载完毕，播放
             _audioSource.Play();
             //显示歌曲信息
