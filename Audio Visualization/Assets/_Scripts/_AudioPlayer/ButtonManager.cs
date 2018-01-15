@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
     public AudioManager _audioManager;
+    public GameObject _playlistPanel;
     /// <summary>
     /// 播放当前/继续
     /// </summary>
@@ -46,5 +47,19 @@ public class ButtonManager : MonoBehaviour
     public void AudioStop()
     {
         _audioManager.PlaySong(AudioManager.PlayButton.STOP);
+    }
+    /// <summary>
+    /// 开关 播放列表
+    /// </summary>
+    public void TogglePlaylist()
+    {
+        if(_playlistPanel.activeSelf)
+        {
+            _playlistPanel.SetActive(false);
+        }
+        else
+        {
+            _playlistPanel.SetActive(true);
+        }
     }
 }

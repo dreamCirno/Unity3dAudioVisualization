@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     public Coroutine _delayFadeOut;
 
     public FileManager _fileManager;
+
+    bool _isover = false;
     #endregion
     #region 方法
     private void Start()
@@ -87,10 +89,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DelayQuit()
     {
-        if (!_isOver)
+        if (!_isover)
         {
             Application.CancelQuit();
-            _isOver = true;
+            _isover = true;
         }
         //停止音源播放
         _audioSource.Stop();
@@ -102,7 +104,7 @@ public class GameManager : MonoBehaviour
         //出现Seeu声音
         _gameControllerAudio.PlayOneShot(_seeyaClip);
         //渐变
-        for (int i = 0; i <= 255; i += 2)
+        for (int i = 0; i <= 255; i += 3)
         {
             _fadePanel.color = new Color(0, 0, 0, i / 255f);
             yield return new WaitForSeconds(0.01f);

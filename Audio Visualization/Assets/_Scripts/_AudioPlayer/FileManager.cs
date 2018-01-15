@@ -16,6 +16,7 @@ public class FileManager : MonoBehaviour
     public string _saveFolder;
     public Image _ImgLoading;
     public static string name = "";
+    public static bool _isLoading = false;
     WWW www;
     #endregion
     #region 方法
