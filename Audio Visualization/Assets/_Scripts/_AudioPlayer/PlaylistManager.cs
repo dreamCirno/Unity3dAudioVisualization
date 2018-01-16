@@ -12,16 +12,6 @@ public class PlaylistManager : MonoBehaviour
     public string[] _songName;
     public string[] _songAuthor;
 
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-
     public void GetPlaylistInfo()
     {
         if (AudioManager.fileNameList != null && AudioManager.fileNameList.Count != 0)
