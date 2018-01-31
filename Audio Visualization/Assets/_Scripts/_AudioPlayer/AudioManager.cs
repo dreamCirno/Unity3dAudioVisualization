@@ -95,10 +95,7 @@ public class AudioManager : MonoBehaviour
             //播放结束后，自动下一首
             if (_audioSource.time == _audioSource.clip.length)
             {
-                if (!_audioIsLoadDone)
-                {
-                    PlaySong(PlayButton.NEXT);
-                }
+                PlaySong(PlayButton.NEXT);
             }
         }
     }
