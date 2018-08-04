@@ -4,6 +4,9 @@
 
 [![Audio Visualization](https://s1.ax1x.com/2018/01/14/ptc5wT.png "Audio Visualization")](https://s1.ax1x.com/2018/01/14/ptc5wT.png "Audio Visualization")
 
+## 安装提示
+
+1. 项目最好使用 Unity 2017.1.0f3 版本
 
 ## 更新摘要
 - 2018-1-31</br>

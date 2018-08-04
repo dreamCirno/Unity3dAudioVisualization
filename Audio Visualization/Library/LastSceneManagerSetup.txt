@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/_Scenes/AudioPlayer.unity
-  isLoaded: 1
-  isActive: 1
